@@ -57,7 +57,7 @@ func (obj *TF31Proxy) Pull() {
 		obj.loginState = AlreadyLogin
 	}
 
-	request, err := http.NewRequest("GET", "http://31f.cn/search/?port=&area=%E7%BE%8E%E5%9B%BD&proto=socks5", nil)
+	request, err := http.NewRequest("GET", "http://31f.cn/socks-proxy/", nil)
 	if err != nil {
 		Logger.Print(err)
 		return
