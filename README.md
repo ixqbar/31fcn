@@ -5,7 +5,7 @@
 
 ### version
 ```
-v0.0.1
+v0.0.2
 ```
 
 ### config
@@ -17,6 +17,7 @@ v0.0.1
 		<startup>true</startup>
 		<schedule>0 0 * * * *</schedule>
 	</task>
+	<url>http://31f.cn/socks-proxy/</url>
 	<redis_server></redis_server>
 </config>
 ```

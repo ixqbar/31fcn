@@ -57,7 +57,7 @@ func (obj *TF31Proxy) Pull() {
 		obj.loginState = AlreadyLogin
 	}
 
-	request, err := http.NewRequest("GET", "http://31f.cn/socks-proxy/", nil)
+	request, err := http.NewRequest("GET", GTSpiderConfig.TargetURL, nil)
 	if err != nil {
 		Logger.Print(err)
 		return

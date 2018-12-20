@@ -31,6 +31,7 @@ func (obj *TF31User) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error 
 
 type TSpiderConfig struct {
 	F31User TF31User `xml:"f3cn"`
+	TargetURL string `xml:"url"`
 	PullOnStartup bool `xml:"task>startup"`
 	Schedule string `xml:"task>schedule"`
 	RedisServerAddress string `xml:"redis_server"`
